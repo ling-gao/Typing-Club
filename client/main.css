@@ -1,0 +1,480 @@
+/*2017/05/02
+* FRANK-1
+*/
+
+/*global define-start*/
+body {
+    font-family: 'PT Sans';
+}
+
+/*global define-end*/
+
+/*header custom style define-start*/
+nav.navbar-dark-blue {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.typing-menu > ul {
+    font-family: 'PT Sans';
+}
+
+.typing-menu > ul > li > a {
+    color: #fff;
+    font-size: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.typing-menu > ul > li > a:hover {
+    text-decoration: underline;
+    background-color: transparent;
+}
+
+.typing-menu > ul > li > a:focus {
+    text-decoration: underline;
+    background-color: transparent;
+}
+
+.typing-menu select {
+    margin-top: 10px;
+    color: #fff;
+    padding: 5px 8px;
+    border-radius: 15px;
+    background: #1c292d;
+    border-color: #8d9aa0;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.typing-menu > ul > li > a.login-btn {
+    padding: 5px 30px;
+    margin-top: 11px;
+    background: #fff;
+    color: #184d66;
+    border-radius: 15px;
+    margin-left: 15px;
+    border-color: #8d9aa0;
+    border: none;
+    font-size: 15px;
+    max-width: 100px;
+    min-width: 96px;
+}
+
+/*header custom style define-end*/
+
+/*homepage body custom style define-start*/
+.home-main-body {
+    
+}
+
+.home-main-body > .middle-part-1 {
+    background-image: url("../img/star-rocket-background.png");
+    background-color: #184d66;
+    min-height: 550px;
+    background-size: 100% 100%;
+    padding-top: 50px;
+    position: relative;
+}
+
+.home-main-body > .middle-part-1 > .action-part {
+    display: inline-block;
+}
+
+.home-main-body > .middle-part-1 > .action-part > .title {
+    color: #fff;
+    font-size: 40px;
+    font-family: 'PT Sans';
+    margin-top: 70px;
+    display: inline-block;
+    line-height: 1;
+}
+
+.home-main-body > .middle-part-1 > .action-part > .title > a {
+    color: #be3939;
+}
+
+.home-main-body > .middle-part-1 > .action-part > .action {
+    color: #fff;
+}
+
+.home-main-body > .middle-part-1 > .action-part > .action > a {
+    border-radius: 15px;
+    background: #152a34;
+    padding: 8px 30px;
+    border: 0px;
+    font-size: 15px;
+    font-family: 'PT Sans';
+    color: #fff;
+    text-shadow: none;
+    opacity: 0.6;
+}
+
+.home-main-body > .middle-part-1 > .action-part > .action > a:hover {
+    opacity: 1;
+}
+
+.site-logo {
+    display: inline-block;
+    position: absolute;
+    left: 35px;
+    top: 13px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+}
+
+.site-logo-hide {
+    display: none;
+}
+
+.site-logo > img {
+    width: 100px;
+    z-index: 100;
+}
+
+.home-main-body > .middle-part-1 > .middle-part-rocket-1 {
+    display: inline-block;
+    position: absolute;
+    left: 279px;
+    z-index: 100;
+}
+
+.home-main-body > .middle-part-1 > .middle-part-rocket-1 > img {
+    width: 182px;
+}
+
+div.cursor-wait {
+    background: url(../img/bar.gif) left center;
+    display: inline-block;
+    width: 2px;
+    line-height: 100%;
+}
+
+.middle-part-white-cloud {
+    position: absolute;
+    background: url(../img/white_cloud.png) repeat-x;
+    min-height: 140px;
+    width: 100%;
+    background-size: contain;
+    height: 250px;
+}
+
+.middle-part-blue-cloud {
+    position: absolute;
+    background: url(../img/blue_cloud.png) repeat-x;
+    min-height: 250px;
+    width: 100%;
+    background-size: contain;
+}
+
+img.keyboard {
+    width: 100%;
+}
+
+p.typing-text {
+    color: #939da3;
+}
+
+.middle-part-4 {
+    background-color: #331966;
+    background: -webkit-linear-gradient(#331966, rgba(43, 23, 82, 0.82)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#331966, rgba(43, 23, 82, 0.82)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#331966, rgba(43, 23, 82, 0.82)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#331966, rgba(43, 23, 82, 0.82)); /* Standard syntax */
+}
+
+div.rocket-container {
+    width: 90%;
+    display: inline-block;
+}
+
+div.footer {
+    background-color: #292e31;
+}
+
+.typing-text span {
+    margin-right: 2px;
+}
+
+span.typing {
+    color: #0e630e;
+}
+
+span.success {
+    background: #e7fbd3;
+}
+
+span.r-success {
+    background: #FFE9B2;
+}
+
+span.wrong {
+    color: darkred !important;
+    background: pink;
+}
+
+span.mouse_cursor {
+    border-bottom: 2px solid #232222;
+}
+
+img.home-hand {
+    width: 84%;
+}
+
+div.wpm-speed {
+    position: relative;
+}
+
+div.accuracy {
+    position: relative;
+}
+
+div.wpm-speed > p.wpm-info {
+    margin-bottom: 0px;
+    display: inline-block;
+    position: absolute;
+    bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+div.accuracy > p.accuracy-info {
+    margin-bottom: 0px;
+    display: inline-block;
+    position: absolute;
+    bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+/*homepage body custom style define-end*/
+
+/*homepage common style-start*/
+img.planet {
+    width: 136px;
+}
+
+div.rule {
+    width: 70%;
+    display: inline-block;
+}
+
+div.keyboard-wrapper {
+    position: relative;
+    width: 1110px;
+    min-height: 880px;
+}
+
+div.left-hand-wrapper {
+    position: absolute;
+    bottom: 127px;
+    left: 0px;
+}
+
+div.right-hand-wrapper {
+    position: absolute;
+    bottom: 127px;
+    right: 76px;
+}
+
+img.moving-finger {
+}
+
+img.wpm-indicator {
+    position: absolute;
+    bottom: 0px;
+    height: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    opacity: 0.8;
+    transform-origin: bottom;
+    transform: rotate(-75deg);
+    transition: all 1s;
+}
+
+/*homepage common style-end*/
+
+/* Added by Frank-2 */
+.multi-lang-france {
+    background-image: url(img/flags/france.png) !important;
+    padding-left: 28px !important;
+    width: 103px !important;
+    background-size: 20px 20px !important;
+    background-repeat: no-repeat !important;
+    background-position: 10px !important;
+}
+
+.azerty.select-azerty {
+    background-image: url(img/flags/q_w.png) !important;
+    padding-left: 33px !important;
+    width: 103px !important;
+    background-size: 20px 20px !important;
+    background-repeat: no-repeat !important;
+    background-position: 10px !important;
+}
+
+.typing-letters {
+    margin-top: 90px;
+}
+/*End*/
+/*login-page style-start*/
+div.login-content {
+    background: url(../img/bg-white-lock.png) repeat;
+    width: 360px;
+    margin: 0 auto;
+    margin-bottom: 0px;
+    padding: 30px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    color: white;
+}
+
+.social-icons:before, .social-icons:after {
+    content: " ";
+    display: table;
+}
+
+ul.social-icons {
+    padding-left: 10px;
+}
+
+.social-icons li {
+    display: inline;
+    list-style: none;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.social-icons li a i {
+    color: white;
+    font-size: 24px;
+}
+
+.login-form label {
+    font-weight: normal;
+}
+/*login-page style-end*/
+
+.footer-logo {
+    padding-left: 15px;
+    width: 110px;
+}
+
+.middle-part-2 {
+  background-color: #F5F7F9;
+}
+
+/*List page*/
+.list-container {
+    min-height: 550px;
+    padding-top: 100px;
+}
+
+.box-container {
+    display: inline-block;
+    padding: 10px;
+    max-height: 550px;
+    overflow-y: auto;
+}
+
+.box-container a {
+    color: #000;
+}
+
+.box {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    min-width: 160px;
+    height: 160px;
+    margin: 10px;
+    padding: 10px;
+    background: rgba(255,255,255,0.7);
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,0.37);
+    transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.box-home {
+    background: url(img/running.png) no-repeat;
+    height: 70px;
+    background-position: center;
+}
+
+.lesson-title {
+    border-top: 1px solid #b5b5b5;
+    margin-left: -10px;
+    margin-right: -10px;
+    text-align: center;
+    padding-top: 3px;
+}
+
+.stats-title {
+    color: rgba(102, 102, 102, 0.71);
+    height: 18px;
+    padding: 0px 5px;
+    font-size: 12.5px;
+}
+
+.text-p-left {
+    float: left;
+}
+
+.text-p-right {
+    float: right;
+}
+/*End*/
+
+/*Results page*/
+.results-container {
+    min-height: 600px;
+    padding-top: 150px;
+}
+.results-title {
+    text-align: center;
+    color: #86add3;
+}
+.score-panel {
+    float: none;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+.score-panel .number {
+    font-family: "arial black", arial;
+    font-weight: bold;
+    font-size: 20px;
+    color: #95B8DC;
+}
+.score-panel .item {
+    font-weight: normal;
+    font-size: 1em;
+    font-family: arial;
+    color: #95B8DC;
+    margin-left: 8px;
+}
+.subtitle {
+    color: #95B8DC;
+    font-family: arial;
+    font-weight: bold;
+}
+.r-scores {
+    padding-left: 60px;
+    text-align: left;
+}
+.r-border {
+    border-right: 1px dashed #508AA9;
+}
+.results-buttons {
+    padding-top:30px;
+    text-align: center;
+}
+.results-buttons button {
+    margin-left: 20px;
+}
